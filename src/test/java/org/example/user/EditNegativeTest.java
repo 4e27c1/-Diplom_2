@@ -8,7 +8,6 @@ import org.junit.Test;
 public class EditNegativeTest {
     private final UserClient client = new UserClient();
     private final UserAssertions check = new UserAssertions();
-    private String accessToken;
 
     @Test
     @DisplayName("Создание и редактирование пользователя без логина")

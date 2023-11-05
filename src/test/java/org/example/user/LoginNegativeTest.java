@@ -34,7 +34,6 @@ public class LoginNegativeTest {
         Map <String, String> wrongLogData = new HashMap<>();
         wrongLogData.put("email", user.getEmail()+"11");
         wrongLogData.put("password", user.getPassword());
-        System.out.println(wrongLogData);
 
         ValidatableResponse response = client.create(user);
         check.createdSuccessfully(response);
